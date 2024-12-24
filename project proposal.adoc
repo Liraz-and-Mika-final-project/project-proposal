@@ -1,0 +1,88 @@
+project proposal:
+
+
+1. What is the problem you are trying to solve?
+
+The problem we’re trying to solve is the inconvenience and inefficiency of managing daily household needs, specifically in ensuring that milk supplies are consistently available. For many people, running out of milk can be a frustrating issue, especially when it impacts daily routines such as breakfast, cooking, or preparing beverages like coffee or tea.
+
+2. Describe briefly, in high level your presumed solution
+
+The proposed solution is a smart milk container that automatically monitors the milk level and provides real-time feedback to the user through a mobile application. The system will use a combination of sensors, microcontrollers, and cloud-based services to track the milk level and send alerts when the milk is running low.
+
+3. Are there other approaches?
+
+Yes, there are several alternative approaches to solving the problem of monitoring milk levels and notifying users when they are running low. Here are some other potential solutions, each with different technologies or methods:
+Visual Detection with Cameras:                                                                             Using cameras and image processing (e.g., OpenCV) to visually detect milk levels inside the container.
+Smart Refrigerator:                                                                                                        A smart fridge with built-in sensors to track milk levels automatically.
+
+4. Who are the expected users of the application?
+
+The expected users of the application are primarily households and individuals who regularly use milk as part of their daily routines. More specifically
+Families/ Roommates:
+Households with children or multiple members who consume milk regularly for breakfast, coffee, tea, or cooking. They often struggle with keeping track of milk consumption, making them ideal users for this app.
+Elderly or Disabled Individuals:
+Users who may have difficulty going to the store frequently or keeping track of household supplies, making the app’s automatic alerts a helpful tool to ensure they don't run out of essentials like milk. 
+Busy Professionals:
+Individuals with busy schedules who may forget to check their milk levels and appreciate the convenience of automated alerts to avoid running out unexpectedly.
+The product would cater to anyone who regularly uses milk and desires a convenient, automated system to help manage milk levels and prevent running out unexpectedly.
+
+
+5. What will be the main features and flows of the (different)
+user(s)?
+
+The main features and user flows of the application are designed to enhance convenience and provide an easy-to-use interface for tracking milk levels. Here’s an outline of the key features and user flows:
+Main Features:
+Milk Level Monitoring:
+Real-time tracking of the milk level using the weight sensor integrated into the surrounding container . The app will display the current milk level in percentage or volume.
+Alerts & Notifications:
+Push notifications or alerts sent to the user when the milk level reaches a predefined threshold (e.g., 20% remaining), indicating it’s time to buy more milk. We’ll do that by using default settings and customise settings per client’s choice.
+Consumption History:
+The app can store and display historical data on milk consumption to help users track usage patterns over time, making it easier to predict when they’ll need more milk.
+Milk Purchase Reminders:
+A reminder system that notifies users when it's time to buy milk based on their consumption rate or when the milk is nearing its expiration date. For example when the user drives home and updates the ‘waze’ destination spot, the system will recognise it and send a reminder to stop at a supermarket on the way to buy milk. 
+Settings and Customization:
+Users can set their preferred alert thresholds (e.g., low milk alert at 20%, medium alert at 50%) and customize notification preferences (e.g., frequency, type of notification).
+Integration with Other Services:
+Integration with shopping lists or online grocery delivery services (e.g., connecting to grocery delivery apps to help users order milk directly through the app).
+Multiple User Profiles:
+The app could support multiple profiles for shared milk usage, allowing family members or roommates to have personalized settings and preferences.
+User Flows:
+Onboarding Flow:
+User opens the app and creates an account.
+The user sets up their milk container, entering preferences (e.g., preferred threshold for alerts, frequency of notifications).
+The app guides the user through connecting the milk container sensor to the app (via Bluetooth or Wi-Fi).
+Main Screen Flow:
+Upon opening the app, users can view the real-time milk level of their container.
+The app shows a visual representation of the current milk level (percentage or volume).
+If the milk is low, a notification is displayed urging the user to buy more milk.
+Alert Flow:
+When the milk level falls below the threshold, the user receives a push notification indicating low milk levels.
+Users can dismiss or snooze the alert, or directly place a milk order through the app if integrated with online grocery services.
+Settings Flow:
+Users can access the settings menu to adjust their alert preferences, update the threshold for notifications, and manage other app-related features.
+History Flow:
+Users can check past consumption patterns to better predict future milk needs. This might also help optimize the frequency of milk purchases based on actual usage.
+Expiration Date Flow
+The app automatically tracks the expiration date of the milk based on user input (when the milk is added to the container).
+If the milk is past its expiration date, the app sends a notification such as "The milk has expired. Please dispose of it."
+Users can also view the expiration date on the main screen and history flow, ensuring they always know when their milk is at risk of spoiling.
+
+
+6. Are there any external dependencies?
+Yes, there are several external dependencies that the system might rely on:
+Hardware and IoT Sensors:
+The weight sensor that tracks the milk level inside the container is a critical external dependency. It needs to work reliably with the microcontroller and communicate accurately with the app.
+Mobile Platforms (Google Play):
+The app will run in Google Play Store for distribution and updates.
+Cloud Services/Backend Infrastructure:
+The backend infrastructure might use cloud services for processing data, storing consumption history, and sending notifications.
+using Kubernetes or microservices, we’ll also have container orchestration and cloud computing infrastructure
+Kubernetes (for orchestration):
+Kubernetes will be used to manage and scale microservices, ensuring high availability and load balancing. It will automate deployment, scaling, and management of containers, which is essential for large-scale production environments.
+
+Conclusion:
+The project has the potential to revolutionize how individuals manage their household groceries, particularly milk. By improving convenience, reducing waste, and promoting sustainability, this solution addresses both consumer and environmental concerns. Additionally, the integration with IoT and smart home technology paves the way for a future where household management is more automated and efficient.
+
+
+
+
